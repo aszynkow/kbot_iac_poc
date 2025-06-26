@@ -25,7 +25,7 @@ This guide helps you install and use **KBOT Infrastructure**.
 
 1. Click **Deploy to Oracle Cloud** above.
 2. In **Create Stack**:
-   - Give your stack a **name** (e.g., _kbot-stack_).
+   - Give your stack a **name** (e.g. _kbot-stack_).
    - Select the **compartment** where you want OCI KBOT deployed.
    - Provide any additional parameters (such as choosing existing VCN and subnet and providing public ssh key and ADB/OpenSearch cluster user credentials) according to your preferences.
 3. Click **Next**, then **Create**, and finally choose **Run apply** to provision your cluster.
