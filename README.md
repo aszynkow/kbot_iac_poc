@@ -26,22 +26,22 @@ This guide helps you install and use **KBOT Infrastructure**.
 1. Click **Deploy to Oracle Cloud** above.
 2. In **Create Stack**:
    - Give your stack a **name** (e.g., _oke-stack_).
-   - Select the **compartment** where you want OCI AI Blueprints deployed.
+   - Select the **compartment** where you want OCI KBOT deployed.
    - Provide any additional parameters (such as node size, node count) according to your preferences.
 3. Click **Next**, then **Create**, and finally choose **Run apply** to provision your cluster.
-4. Monitor the progress in **Resource Manager → Stacks**. Once the status is **Succeeded**, you have a functional VCN and an OKE cluster ready to host OCI AI Blueprints.
+4. Monitor the progress in **Resource Manager → Stacks**. Once the status is **Succeeded**, you have a functional 2 x A10 GPU VMs, APEX/ADB, OpenSearch Cluster, OBject Store bucket and Bastion Service to host and work with OCI AI KBOT.
 
 ## Cleanup
 
 When you are finished, you can remove the resources you created in **two steps**, in this order:
 
-1. **Destroy the OCI AI Blueprints Stack**
+1. **Destroy the OCI AI KBOTs Stack**
 
    - Go to **Resource Manager → Stacks** in the OCI Console.
-   - Select the stack you used to install **OCI AI Blueprints** (from Step 3).
+   - Select the stack you used to install **OCI AI KBOT** (from Step 3).
    - Choose **Terraform Actions → Destroy**, confirm, and wait until the job succeeds.
 
-Following this order ensures you do not have leftover services or dependencies in your tenancy. Once both stacks are destroyed, your tenancy will be free of any OCI AI Blueprints-related resources.
+Following this order ensures you do not have leftover services or dependencies in your tenancy. Once both stacks are destroyed, your tenancy will be free of any OCI AI KBOT-related resources.
 
 ---
 
