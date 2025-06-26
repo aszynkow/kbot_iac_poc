@@ -1,6 +1,6 @@
 # Getting Started with OCI KBOT 
 
-This guide helps you install and use **KBOT Infrastructure** for the first time. You will:
+This guide helps you install and use **KBOT Infrastructure**.
 
 ![KBOT Infrastructure](images/Kbotp1.png)
 
