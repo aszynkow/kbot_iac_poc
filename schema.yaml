@@ -388,6 +388,14 @@ variables:
   vm_instance_name:
     type: string
     visible: false
+  
+  cus_image_name:
+    type: string
+    visible: false
+
+  cus_image_url:
+    type: string
+    visible: false
 
  # db_admin_password:
   #  title: Database Admin User Password

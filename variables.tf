@@ -238,3 +238,10 @@ variable bastion_client_cidr_block_allow_list {
 variable bastion_name {
   default = "kbotbs1"
 }
+
+variable cus_image_name {
+  default = "imported-image-kbot-a10"
+}
+variable cus_image_url {
+  default = "https://objectstorage.ca-toronto-1.oraclecloud.com/p/EDngSWYfn3HjrN0xbfBSVCctRVKVvNf3NOW7DdInKMtgiZwiUqy7PsA_xifmI1oq/n/hpc_limited_availability/b/images/o/Ubuntu-22-OCA-OFED-23.10-2.1.3.1-GPU-550-CUDA-12.4-2024.09.18-0"#"https://objectstorage.us-ashburn-1.oraclecloud.com/n/your_namespace/b/your_bucket_name/o/your_image_object_name"
+}

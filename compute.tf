@@ -49,7 +49,7 @@ resource "oci_core_instance" "llm_instance" {
   }
 
   source_details {
-    source_id   = data.oci_core_images.kbot_image.images[0].id
+    source_id   = oci_core_image.cus_kbot_image.id #data.oci_core_images.kbot_image.images[0].id
     source_type = "image"
   }
 
@@ -60,4 +60,16 @@ resource "oci_core_instance" "llm_instance" {
 
   #defined tags
 
+}
+
+resource "oci_core_image" "cus_kbot_image" {
+  # Required
+  compartment_id = var.compartment_ocid
+  display_name   = var.cus_image_name
+
+  image_source_details {
+          source_type = "objectStorageUri"
+          source_uri = var.cus_image_url
+      }
+  
 }
