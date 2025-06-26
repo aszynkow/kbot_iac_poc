@@ -27,7 +27,7 @@ This guide helps you install and use **KBOT Infrastructure**.
 2. In **Create Stack**:
    - Give your stack a **name** (e.g., _kbot-stack_).
    - Select the **compartment** where you want OCI KBOT deployed.
-   - Provide any additional parameters (such as node size, node count) according to your preferences.
+   - Provide any additional parameters (such as choosing existing VCN and subnet and providing public ssh key and ADB/OpenSearch cluster user credentials) according to your preferences.
 3. Click **Next**, then **Create**, and finally choose **Run apply** to provision your cluster.
 4. Monitor the progress in **Resource Manager → Stacks**. Once the status is **Succeeded**, you have a functional 2 x A10 GPU VMs, APEX/ADB, OpenSearch Cluster, OBject Store bucket and Bastion Service to host and work with OCI AI KBOT.
 
