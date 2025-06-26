@@ -29,18 +29,18 @@ data "oci_core_images" "InstanceImageOCID" {
   }
 }
 
-data "oci_core_images" "kbot_image" {
-  compartment_id           = var.compartment_ocid
+#data "oci_core_images" "kbot_image" {
+#  compartment_id           = var.compartment_ocid
   #operating_system         = var.instance_os
   #operating_system_version = var.linux_os_version
   #shape                    = var.node_shape
 
-  filter {
-    name   = "display_name"
-    values = ["^.*kbot*[^G]*$"]
-    regex  = true
-  }
-}
+#  filter {
+ #   name   = "display_name"
+  #  values = ["^.*kbot*[^G]*$"]
+   # regex  = true
+  #}
+#}
 
 data "oci_objectstorage_namespace" "osNamespace" {
     #Optional

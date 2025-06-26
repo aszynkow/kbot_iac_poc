@@ -21,7 +21,7 @@ This guide helps you install and use **KBOT Infrastructure**.
 
 ## Step 2: Deploy the KBOT infrastructure
 
-[![Deploy to Oracle Cloud](https://oci-resourcemanager-plugin.plugins.oci.oraclecloud.com/latest/deploy-to-oracle-cloud.svg)](https://cloud.oracle.com/resourcemanager/stacks/create?region=home&zipUrl=https://github.com/aszynkow/kbot_iac_poc/raw/main/releases/download/v1.0.1/kbotiacv102.zip)
+[![Deploy to Oracle Cloud](https://oci-resourcemanager-plugin.plugins.oci.oraclecloud.com/latest/deploy-to-oracle-cloud.svg)](https://cloud.oracle.com/resourcemanager/stacks/create?region=home&zipUrl=https://github.com/aszynkow/kbot_iac_poc/raw/main/releases/download/v1.0.1/kbotiacv103.zip)
 
 1. Click **Deploy to Oracle Cloud** above.
 2. In **Create Stack**:

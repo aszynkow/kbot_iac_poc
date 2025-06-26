@@ -44,6 +44,6 @@ output "os_bucket_name" {
   value = var.osb1_name
 }
 
-output kbot_image_id {
-  value = data.oci_core_images.kbot_image.images[0].id
-}
+#output kbot_image_id {
+ # value = data.oci_core_images.kbot_image.images[0].id
+#ßß}
