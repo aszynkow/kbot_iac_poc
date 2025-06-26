@@ -2,11 +2,11 @@
 
 This guide helps you install and use **KBOT Infrastructure** for the first time. You will:
 
-![KBOT Infrastructure](images/Kbotp1.png.png)
+![KBOT Infrastructure](images/Kbotp1.png)
 
 
 1. Ensure you have the correct IAM policies in place.
-2. Deploy a dedicated **KBOT INfrastructure** stack.
+2. Deploy a dedicated **KBOT Infrastructure** stack.
    - this stack imports a cusotm image so first time may run ~10min longer
 3. Clean up resources when you’re done.
 
