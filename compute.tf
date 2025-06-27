@@ -34,6 +34,44 @@ resource "oci_core_instance" "llm_instance" {
   display_name        = var.vm_instance_name[count.index]
   shape               = var.node_shape
 
+  agent_config {
+    are_all_plugins_disabled = "false"
+    is_management_disabled   = "false"
+    is_monitoring_disabled   = "false"
+    plugins_config {
+      desired_state = "DISABLED"
+      name          = "Vulnerability Scanning"
+    }
+    plugins_config {
+      desired_state = "ENABLED"
+      name          = "OS Management Service Agent"
+    }
+    plugins_config {
+      desired_state = "DISABLED"
+      name          = "Management Agent"
+    }
+    plugins_config {
+      desired_state = "ENABLED"
+      name          = "Custom Logs Monitoring"
+    }
+    plugins_config {
+      desired_state = "ENABLED"
+      name          = "Compute Instance Run Command"
+    }
+    plugins_config {
+      desired_state = "ENABLED"
+      name          = "Compute Instance Monitoring"
+    }
+    plugins_config {
+      desired_state = "DISABLED"
+      name          = "Block Volume Management"
+    }
+    plugins_config {
+      desired_state = "ENABLED"
+      name          = "Bastion"
+    }
+  }
+  
   dynamic "shape_config" {
     for_each = local.is_flex_shape ? [1] : []
     content {
